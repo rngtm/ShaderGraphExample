@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EnergySpreadRing
+  m_Name: EnergySpreadRing_1
   m_Shader: {fileID: 4800000, guid: 3010919c690d8ea4b9031443da63f322, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
