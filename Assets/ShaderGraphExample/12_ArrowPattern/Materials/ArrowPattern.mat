@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ArrowPattern
+  m_Shader: {fileID: 4800000, guid: 0e55debe5a992284891c6d5ced1c74c8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_1EC76FC1: 0.28
+    - Vector1_4A8B25E8: 60
+    - Vector1_5650127D: 0.347
+    - Vector1_A0C890DE: 0
+    - Vector1_FB6429AE: 0.12
+    m_Colors:
+    - Color_2482AEE2: {r: 0, g: 0.1332849, b: 0.16037738, a: 0}
+    - Color_7D8BDDBF: {r: 0, g: 0, b: 0, a: 1}
+    - Color_EB8FF9A0: {r: 0, g: 1, b: 0.8166666, a: 1}
+    - Color_F27CAB4: {r: 1, g: 1, b: 1, a: 1}
