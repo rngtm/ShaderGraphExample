@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RingPattern
+  m_Shader: {fileID: 4800000, guid: b5870da94a3dcb74d828a4df481cf7a8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_1605D893: 0.4
+    - Vector1_1D66C8F8: 0.5
+    - Vector1_1D7429CF: 0
+    - Vector1_2B0F3DCA: -2.52
+    - Vector1_2B252E39: 0
+    - Vector1_2B445A73: 32
+    - Vector1_341B542F: 0.863
+    - Vector1_3ED3530F: 0.32
+    - Vector1_4DD757D5: 1
+    - Vector1_4DE45A48: 28
+    - Vector1_720F2FD5: 0.45
+    - Vector1_7C41E834: 1
+    - Vector1_96E5C3EA: 0.05
+    - Vector1_CEDE9144: 0.43
+    - Vector1_D44184AF: 6
+    - Vector1_DB6D3083: 0.1
+    - Vector1_ED2DDE94: 0.85
+    - Vector1_F9C0E99F: 0.1
+    - Vector1_FD7565D8: 0.19
+    m_Colors:
+    - Color_32A62DB7: {r: 0, g: 0, b: 0, a: 0}
+    - Color_593A055B: {r: 1, g: 1, b: 1, a: 0}
+    - Color_87C0E85C: {r: 0, g: 0, b: 0, a: 0}
+    - Color_9AC7FCD0: {r: 1, g: 1, b: 1, a: 0}
+    - Color_D5CA0EB2: {r: 1, g: 1, b: 1, a: 0}
