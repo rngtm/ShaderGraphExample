@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2_Raymarching_Lighting
+  m_Shader: {fileID: 4800000, guid: eef0cacce8b08f646976db2b97f8e21b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_302569CE: 44
+    - Vector1_34A6B5BF: 0
+    - Vector1_79E0FC05: 0
+    - Vector1_7E712FE3: 56
+    - Vector1_9708331A: 12
+    - Vector1_B60CBDBA: 0.72
+    - Vector1_B6E5CCE2: 4.24
+    - Vector1_BAFB606C: 6
+    m_Colors:
+    - Color_48DE955E: {r: 0, g: 0.432487, b: 1, a: 0}
+    - Color_644BA1C5: {r: 0, g: 0.5272732, b: 1, a: 0}
+    - Vector2_8202E7FD: {r: 0, g: 1, b: 0, a: 0}
+    - Vector3_1C975321: {r: 1, g: 0, b: 0, a: 0}
+    - Vector3_9F6B4997: {r: 0.25, g: 1, b: 0, a: 0}
+    - Vector3_D2C5C28F: {r: 0, g: 0.5, b: 1, a: 0}
