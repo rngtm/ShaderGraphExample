@@ -5,19 +5,23 @@ using UnityEngine;
 /// <summary>
 /// レイマーチングで球をたくさん表示するカスタムノード
 /// </summary>
-[Title ("Raymarching", "Raymarch Sphere")]
-public class RaymarchingSphereNode : CodeFunctionNode {
-    public RaymarchingSphereNode () {
+[Title("Raymarching", "Raymarch Sphere")]
+public class RaymarchingSphereNode : CodeFunctionNode
+{
+    public RaymarchingSphereNode()
+    {
         name = "Raymarching(Sphere)";
     }
 
-    protected override MethodInfo GetFunctionToConvert () {
-        return GetType ().GetMethod ("RaymarchingNode_Function",
+    protected override MethodInfo GetFunctionToConvert()
+    {
+        return GetType().GetMethod("RaymarchingNode_Function",
             BindingFlags.Static | BindingFlags.NonPublic);
     }
 
-    public override void GenerateNodeFunction (FunctionRegistry registry, GraphContext graphContext, GenerationMode generationMode) {
-        registry.ProvideFunction ("distance_func", s => s.Append (@"
+    public override void GenerateNodeFunction(FunctionRegistry registry, GraphContext graphContext, GenerationMode generationMode)
+    {
+        registry.ProvideFunction("distance_func", s => s.Append(@"
             // 距離関数: 点pからオブジェクトまでの距離を求める
             #define INTERVAL interval
             float distance_func(float3 p, float size, float interval) {
@@ -25,8 +29,8 @@ public class RaymarchingSphereNode : CodeFunctionNode {
                 return length(p) - size;
             }
         "));
-        
-        registry.ProvideFunction ("getNormal", s => s.Append (@"
+
+        registry.ProvideFunction("getNormal", s => s.Append(@"
             // 法線の計算
             float3 getNormal(float3 p, float size, float interval) {
                 float2 e = float2(0.0001, 0.0);
@@ -39,21 +43,23 @@ public class RaymarchingSphereNode : CodeFunctionNode {
         "));
 
 
-        base.GenerateNodeFunction (registry, graphContext, generationMode);
+        base.GenerateNodeFunction(registry, graphContext, generationMode);
     }
 
-    static string RaymarchingNode_Function (
-        [Slot (0, Binding.MeshUV0)] Vector2 UV, 
-        [Slot (1, Binding.None, 0f, 0f, 4f, 0f)] Vector3 CameraPos, // カメラ位置
-        [Slot (2, Binding.None, 0f, 0f, -1f, 0f)] Vector3 CameraDir, // カメラの向きベクトル
-        [Slot (3, Binding.None, 0f, 1f, 0f, 0f)] Vector3 CameraUp,  // カメラの上方向ベクトル
-        [Slot (4, Binding.None, 1f, 0f, 0f, 0f)] Vector1 ObjectSize, // 球のサイズ
-        [Slot (5, Binding.None, 2f, 0f, 0f, 0f)] Vector1 ObjectInterval, // 球の配置間隔
-        [Slot (6, Binding.None, 32f, 0f, 0f, 0f)] Vector1 RaymarchLoop, // レイマーチングのループ回数(この数を大きくすると遠くまで描画されるようになりますが重くなります)
-        [Slot (10, Binding.None)] out Vector1 Hit, // レイがオブジェクトにぶつかったら1.0, ぶつからなかったら0.0
-        [Slot (11, Binding.None)] out Vector1 Distance, // レイマーチングでレイが進んだ距離
-        [Slot (12, Binding.None)] out Vector3 Normal  // オブジェクト上の法線
-    ) {
+    static string RaymarchingNode_Function(
+        [Slot(0, Binding.MeshUV0)] Vector2 UV,
+        [Slot(1, Binding.None, 0f, 0f, 4f, 0f)] Vector3 CameraPos, // カメラ位置
+        [Slot(2, Binding.None, 0f, 0f, -1f, 0f)] Vector3 CameraDir, // カメラの向きベクトル
+        [Slot(3, Binding.None, 0f, 1f, 0f, 0f)] Vector3 CameraUp,  // カメラの上方向ベクトル
+        [Slot(4, Binding.None, 1f, 0f, 0f, 0f)] Vector1 ObjectSize, // 球のサイズ
+        [Slot(5, Binding.None, 2f, 0f, 0f, 0f)] Vector1 ObjectInterval, // 球の配置間隔
+        [Slot(6, Binding.None, 32f, 0f, 0f, 0f)] Vector1 RaymarchLoop, // レイマーチングのループ回数(この数を大きくすると遠くまで描画されるようになりますが重くなります)
+        [Slot(7, Binding.None, 0f, 0f, 0f, 0f)] Vector1 RayStartLength, // レイの開始位置
+        [Slot(10, Binding.None)] out Vector1 Hit, // レイがオブジェクトにぶつかったら1.0, ぶつからなかったら0.0
+        [Slot(11, Binding.None)] out Vector1 Distance, // レイマーチングでレイが進んだ距離
+        [Slot(12, Binding.None)] out Vector3 Normal  // オブジェクト上の法線
+    )
+    {
         Normal = Vector3.zero;
         return @"{
                 #define MAX_REPEAT 100
@@ -64,12 +70,12 @@ public class RaymarchingSphereNode : CodeFunctionNode {
                 #define cPos CameraPos
                 #define cDir normalize(CameraDir)
                 #define cUp normalize(CameraUp)
-                #define cSide normalize(cross(cDir, cUp))
+                #define cSide normalize(cross(cUp, cDir))
 
                 // レイマーチング
                 float3 ray = normalize(p.x * cSide + p.y * cUp + 1.0 * cDir); // レイの向きベクトル
                 float3 rPos = cPos; // レイ位置
-                float rLength = 0.0;// レイが進む長さ
+                float rLength = RayStartLength;// レイが進む長さ
                 float dist = 0.0; // レイとオブジェクト間の距離
                 for (int i = 0; i < min(RaymarchLoop, MAX_REPEAT); i++)
                 {
