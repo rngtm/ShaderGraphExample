@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Akafuji
+  m_Shader: {fileID: 4800000, guid: b3a6874b6a883f74ca313b14af96146c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_B1A412E1_Texture:
+        m_Texture: {fileID: 2800000, guid: f4c8006c59b696446b2ce60653b36f77, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_EE1E112B_Texture:
+        m_Texture: {fileID: 2800000, guid: d739a7465eeb2dc40b6a7317bc30ff9a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_26AB6E85: 0.21
+    - Vector1_50C94437: 64
+    - Vector1_D98B4160: 0.46
+    m_Colors:
+    - Vector2_94E94A1B: {r: 0.248, g: 0.65, b: 0, a: 0}
