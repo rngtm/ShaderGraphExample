@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LED_Scanline
+  m_Shader: {fileID: 4800000, guid: a5ca6651dcc9da744a61414c0df38efa, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_24105AD: 0.3
+    - Vector1_526D6FB7: 24
+    - Vector1_5BB826DA: 0.39
+    - Vector1_5C530B24: 0.4
+    - Vector1_AEAFE49F: 0.44
+    - Vector1_B7B86DE7: -0.29
+    - Vector1_D347787C: 16
+    - Vector1_D366DD4F: 0.4
+    m_Colors:
+    - Color_302C1542: {r: 0, g: 0.05133335, b: 0.063, a: 0}
+    - Color_69FA2D39: {r: 0.755, g: 1, b: 0.951, a: 0}
+    - Vector2_80B535E2: {r: 6, g: 1, b: 0, a: 0}
