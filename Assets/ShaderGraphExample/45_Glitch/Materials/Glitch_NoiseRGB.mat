@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Glitch_NoiseRGB
+  m_Shader: {fileID: 4800000, guid: d6ab47735b42c65459c575d9dee06b02, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_6E49BFE9_Texture:
+        m_Texture: {fileID: 2800000, guid: 7863c99d30a8bb94ab812fc73fff87d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_99DAE0E6_Texture:
+        m_Texture: {fileID: 2800000, guid: 7863c99d30a8bb94ab812fc73fff87d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_BF6BD2C8_Texture:
+        m_Texture: {fileID: 2800000, guid: 7863c99d30a8bb94ab812fc73fff87d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2B4BA72F: 0.39
+    - Vector1_44C67DE4: 33.333332
+    - Vector1_4CC2D766: 100
+    - Vector1_8A716F0F: 0.042
+    - Vector1_B9C321CB: 0.96
+    - Vector1_C6468F69: 32
+    - Vector1_D87E0AC5: 0.27
+    - Vector1_D8F2BD9C: 40
+    - Vector1_DEB134CF: 0.79
+    - Vector1_F2575ECD: 1
+    m_Colors:
+    - Vector3_1BFC8171: {r: 1, g: 1, b: 1, a: 0}
+    - Vector3_30D408F7: {r: 0.14, g: 0.13, b: 0.15, a: 0}
+    - Vector3_6ADB1CA4: {r: 0, g: 0.1, b: 0.05, a: 0}
