@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FireEgg_2
+  m_Shader: {fileID: 4800000, guid: 771adb03d81706547a66ce572da6d377, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_98979A5F_Texture:
+        m_Texture: {fileID: 2800000, guid: 132464db7459e8c4e8be624c55eec31a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_7C5817F8: 1.07
+    m_Colors:
+    - Color_7A4A841: {r: 1.1486983, g: 1.1486983, b: 1.1486983, a: 0}
+    - Vector2_5E62C91E: {r: 0.23, g: -1, b: 0, a: 0}
+    - Vector2_62D20C4F: {r: 1, g: 3, b: 0, a: 0}
+    - Vector2_79925486: {r: -0.76, g: 2.58, b: 0, a: 0}
+    - Vector2_98D8822: {r: 0, g: 1, b: 0, a: 0}
